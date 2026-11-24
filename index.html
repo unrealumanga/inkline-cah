@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#f0f2ec" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>Inkline Against Humanity</title>
+    <style>
+      #loading {
+        z-index: 100;
+        color: #3d4943;
+        background: #f0f2ec;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        font: 13px ui-monospace, "SF Mono", Menlo, monospace;
+        transition: opacity 0.35s;
+        display: flex;
+        position: fixed;
+        inset: 0;
+      }
+      #loading.done {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #loading b {
+        letter-spacing: 0.04em;
+        font-size: 17px;
+      }
+      #loading .ink {
+        background: #dfe3da;
+        border-radius: 1px;
+        width: 140px;
+        height: 2px;
+        overflow: hidden;
+      }
+      #loading .ink:after {
+        content: "";
+        background: #3d4943;
+        width: 40%;
+        height: 100%;
+        animation: 1.1s ease-in-out infinite ink;
+        display: block;
+      }
+      @keyframes ink {
+        0% { transform: translate(-100%); }
+        to { transform: translate(250%); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #loading .ink:after {
+          width: 100%;
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="loading" role="status">
+      <b>Inkline Against Humanity</b>
+      <div class="ink"></div>
+      <span>dealing the drafting table…</span>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
