@@ -1,18 +1,18 @@
-# Hanseatic Ledger · Rise of the Hanse
+# Inkline Against Humanity
 
-A trading sim of the Baltic in 1370. Buy low, sail high, build your Kontor and rise from shopkeeper to Hanse trader. Runs in the browser, no install.
+A card-party game on a 3D drafting table. Play prompt cards against witty written responses, win the Archivist's favour, and level up. Runs in the browser, no install.
 
-### [▶ Play now](https://unrealumanga.github.io/patrician-hanse/)
+### [▶ Play now](https://unrealumanga.github.io/inkline-cah/)
 
-![Sea chart](docs/sea-chart.png)
-![Town](docs/town.png)
+![Table](docs/table.png)
+![Hand](docs/hand.png)
 
 ## Features
-- Hand-inked sea chart: Lübeck, Hamburg, Bremen, Rostock, Stettin, Malmö and more
-- Live markets for 14 goods with shifting prices, wind and seasons
-- Ships, a Werft, Kontor, Tavern, Guild and Hall in every town
-- Isometric 3D town view
-- Auto-trade, save/load, 1x/2x/4x time
+- Three.js table with an ink-and-blueprint look
+- Bot opponents with their own tastes (the Archivist loves dry, design and chaos jokes)
+- Power-ups: Ink Seal 2x, Write-In, Redraw
+- Daily sheet, chronicle, levels
+- LAN Party mode for local multiplayer (run `npm run lan`; not available on the hosted page)
 
 ## Run locally
 ```
