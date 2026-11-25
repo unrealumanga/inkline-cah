@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://unrealumanga.github.io/inkline-cah/sitemap.xml
